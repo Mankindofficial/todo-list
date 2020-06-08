@@ -1,11 +1,11 @@
-const add = document.querySelector(".p");
+const add = document.querySelector("abbr");
 const ul = document.querySelector("ul");
 const submit = document.querySelector("#submit");
 const title = document.querySelector("input");
 const text = document.querySelector("textarea");
 const form = document.querySelector("form");
 const li = document.getElementsByTagName('span');
-const cancel = document.getElementsByTagName("h4");
+const cancel = document.getElementsByClassName("del");
 
 const addNote = (e) => {
 	e.preventDefault();
@@ -13,18 +13,12 @@ const addNote = (e) => {
 		alert("Please Fill in the Required fields");
 	} else {
 		let span = document.createElement("span")
-		span.innerHTML = `<li><strong>${title.value}:</strong> ${text.value}</li><h4><abbr title="Delete Todo">X</abbr></h4>`;
+		span.innerHTML = `<li><strong>${title.value}:</strong> ${text.value}</li><abbr class="del" title="Delete Todo">X</abbr>`;
 		ul.appendChild(span);
 		title.value = "";
 		text.value = "";
 		buttonListElement();
 	}
-	// let li = document.createElement("li");
-	// li.appendChild(document.createTextNode(`${title.value}: ${text.value}`));
-	// ul.appendChild(li);
-	// let del = document.createElement("h4");
-	// del.appendChild(document.createTextNode("X"));
-	// li.appendChild(del);
 }
 const addNotePress = (e) => {
 	if (event.keyCode === 13){
