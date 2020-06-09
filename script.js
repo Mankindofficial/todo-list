@@ -13,7 +13,7 @@ const addNote = (e) => {
 		alert("Please Fill in the Required fields");
 	} else {
 		let span = document.createElement("span")
-		span.innerHTML = `<li><strong>${title.value}:</strong> ${text.value}</li><abbr class="del" title="Delete Todo">X</abbr>`;
+		span.innerHTML = `<li><strong>${title.value.toUpperCase()}:</strong> ${text.value}</li><abbr class="del" title="Delete Todo">X</abbr>`;
 		ul.appendChild(span);
 		title.value = "";
 		text.value = "";

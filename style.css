@@ -1,6 +1,6 @@
 body{
 font-family: Tahoma, sans-serif;
-background:#f4f4f4;
+/*background:#f4f4f4;*/
 margin:0 auto;
 }
 /*************************************
@@ -9,8 +9,9 @@ margin:0 auto;
 
 div{
 display:flex;
-background:#40B0B0;
+background:#f4f4f4;
 padding:0 20px;
+color: #40B0B0;
 }
 abbr{
 text-decoration: none;
@@ -20,7 +21,7 @@ box-sizing: border-box;
 
 }
 abbr:hover{
-background:#587575;
+background:#ccc;
 cursor:pointer;
 box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
@@ -29,8 +30,7 @@ box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
  *  Add-Todo Section
  *************************************/
 form{
-font-family: cursive;
-background:#587575;
+background:#40B0B0;
 padding:20px 40px;
 }
 .dropdown{
@@ -43,18 +43,26 @@ label{
 display:block;
 }
 input{
-background:#587575;
+background:#CCC;
 width: 50%;
 margin-bottom:10px;
 }
 textarea{
-background:#587575;
+background:#CCC;
 width: 50%;
 margin-bottom:5px;
 }
 button{
-display:block;
-cursor:pointer;
+	display:block;
+	cursor:pointer;
+	padding:7px 10px;
+	background:#B6BCBC;
+	color: #f4f4f4;
+	border:none;
+}
+button:hover{
+	background:#345050;
+	color:white;
 }
 
 /*************************************
@@ -72,7 +80,7 @@ border-left:5px dashed #345050;
 margin:0;
 margin-bottom: 2px;
 padding: 5px 20px;
-background:#B6BCBC;
+background:#D3D4D4;
 min-height:50px;
 box-sizing: border-box;
 }
