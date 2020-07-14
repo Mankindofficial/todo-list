@@ -12,12 +12,17 @@ display:flex;
 background:#f4f4f4;
 padding:0 20px;
 color: #40B0B0;
+box-shadow:rgba(0,0,0,0.4) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -5px 10px;
 }
 abbr{
 text-decoration: none;
 margin-left:auto;
 padding: 5px;
 box-sizing: border-box;
+
+}
+div > abbr{
+border-radius:20px;
 
 }
 abbr:hover{
@@ -31,6 +36,7 @@ box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
  *************************************/
 form{
 background:#40B0B0;
+color:white;
 padding:20px 40px;
 }
 .dropdown{
@@ -43,12 +49,12 @@ label{
 display:block;
 }
 input{
-background:#CCC;
+background:#f4f4f4;
 width: 50%;
 margin-bottom:10px;
 }
 textarea{
-background:#CCC;
+background:#f4f4f4;
 width: 50%;
 margin-bottom:5px;
 }
@@ -56,12 +62,12 @@ button{
 	display:block;
 	cursor:pointer;
 	padding:7px 10px;
-	background:#B6BCBC;
-	color: #f4f4f4;
+	background:#f4f4f4;
+	color: #40B0B0;
 	border:none;
 }
 button:hover{
-	background:#345050;
+	background:#587575;
 	color:white;
 }
 
@@ -76,8 +82,9 @@ margin-top:5px;
 li{
 float:left;
 width:90%;
-border-left:5px dashed #345050;
+border-left:5px dashed #587575;
 margin:0;
+color:#587575;
 margin-bottom: 2px;
 padding: 5px 20px;
 background:#D3D4D4;
@@ -89,6 +96,7 @@ margin:0;
 font-weight: bold;
 margin-bottom: 2px;
 padding: 5px 20px;
+color:brown;
 background:#ccc;
 min-height:50px;
 box-sizing: border-box;
@@ -97,7 +105,7 @@ width:10%;
 display:flex;
 align-items: center;
 justify-content: center;
-border-right:5px dashed #345050;
+border-right:5px dashed #587575;
 }
 .del:hover{
     background: #587575;
